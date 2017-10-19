@@ -48,26 +48,23 @@
 
 		//Check each countdown unit if it is set to display and create html element to display them.
 		if(settings.show_day)
-			dwcd_day = settings.wrapper('Days');
+			dwcd_day = settings.wrapper('Dias');
 		if(settings.show_hour)
-			dwcd_hour = settings.wrapper('Hours');
+			dwcd_hour = settings.wrapper('Horas');
 		if(settings.show_minute)
-			dwcd_minute = settings.wrapper('Minutes');
+			dwcd_minute = settings.wrapper('Minutos');
 		if(settings.show_second)
-			dwcd_second = settings.wrapper('Seconds');
-
+			dwcd_second = settings.wrapper('Segundos');
 
 		//Update the countdown timer and progressbar on set interval.
 		update();//First time it should run without wait.
 		setInterval(update, settings.update_int*1000);
-
 
 		//We get every countdown element's html inside the main element.
 		this.prepend(dwcd_second);
 		this.prepend(dwcd_minute);
 		this.prepend(dwcd_hour);
 		this.prepend(dwcd_day);
-
 
 		function update(){
 
