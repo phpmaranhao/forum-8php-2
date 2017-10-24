@@ -15,8 +15,8 @@
  ********************************
  *
  *  Defult CSS
- *  
- *  
+ *
+ *
  */
 body {
   overflow-x: hidden !important;
@@ -215,8 +215,8 @@ h3 {
  ********************************
  *
  *  Header CSS
- *  
- *  
+ *
+ *
  */
 .header-background {
   background: url('../images/background-header.jpg') top center fixed;
@@ -420,8 +420,8 @@ h3 {
  ********************************
  *
  *  About Our Event CSS
- *  
- *  
+ *
+ *
  */
 .about-our-event {
   position: relative;
@@ -447,7 +447,8 @@ h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
-.about-background-image {
+.about-background-image,
+.code-background-image {
   background-color: #ffffff;
   position: absolute;
   left: 0;
@@ -457,17 +458,25 @@ h3 {
   z-index: -9;
 }
 .about-background-image .background-right,
-.about-background-image .background-left {
+.about-background-image .background-left,
+.code-background-image .background-left {
   overflow: hidden;
 }
-.about-background-image .background-right {
-  background-image: url('../images/scedule-1.jpg');
+.about-background-image .background-right,
+.code-background-image .background-left {
   background-size: cover;
   background-repeat: no-repeat;
   padding-left: 0;
   padding-right: 0;
 }
-.background-right-overlay-color {
+.about-background-image .background-right {
+    background-image: url('../images/scedule-1.jpg');
+}
+.code-background-image .background-left {
+    background-image: url('../images/bg-5.jpg');
+}
+.background-right-overlay-color,
+.background-left-overlay-color {
   height: 100%;
   width: 100%;
 }
@@ -475,8 +484,8 @@ h3 {
  ********************************
  *
  *  our featured speaker CSS
- *  
- *  
+ *
+ *
  */
 .our-featured-speaker {
   background: #f5f6f8;
@@ -495,16 +504,27 @@ h3 {
 .our-featured-speaker-right .btn-group .btn-fill {
   color: #FFFFFF;
 }
-.our-featured-speaker-right .btn-group .btn-border {
+.about-our-event-right-body {
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+.our-featured-speaker-right .btn-group .btn-border,
+.about-our-event-right-body .btn-group .btn-border {
   border-color: #60626d;
   color: #60626d;
+}
+.about-our-event-right .buy-tricket {
+    text-align: left;
+}
+.about-our-event-right .buy-tricket .btn-group {
+    margin-top: 20px;
 }
 /*
  ********************************
  *
  *  Scedule CSS
- *  
- *  
+ *
+ *
  */
 .scedule-background {
   background: url('../images/bg-3-3.jpg') top center fixed;
@@ -574,8 +594,8 @@ h3 {
  ********************************
  *
  *  Speakers CSS
- *  
- *  
+ *
+ *
  */
 .speakers {
   background: #f5f6f8;
@@ -604,8 +624,8 @@ h3 {
  ********************************
  *
  *  Pricing Tables CSS
- * 
- *  
+ *
+ *
  */
 .pricing-tables {
   background: #ffffff;
@@ -678,8 +698,8 @@ h3 {
  ********************************
  *
  *  Register CSS
- * 
- * 
+ *
+ *
  */
 .register-background {
   background: url('../images/bg-4-4.JPG') top center fixed;
@@ -769,7 +789,7 @@ h3 {
  ********************************
  *
  *  Sponsore CSS
- *  
+ *
  */
 .sponsore {
   background: #ffffff;
@@ -788,8 +808,8 @@ h3 {
  ********************************
  *
  *  Collapse CSS
- *  
- *  
+ *
+ *
  */
 .collapse-area {
   background: #f5f6f8;
@@ -900,8 +920,8 @@ h3 {
  ********************************
  *
  *  Testimonial CSS
- *  
- *  
+ *
+ *
  */
 .testimonial {
   background: #ffffff;
@@ -938,8 +958,8 @@ h3 {
  ********************************
  *
  *  Twitter Posts
- *  
- *  
+ *
+ *
  */
 .twitter-background {
   background: url('../images/bg-3-3.jpg') top center fixed;
@@ -986,8 +1006,8 @@ h3 {
  ********************************
  *
  *  Contact Us CSS
- *  
- *  
+ *
+ *
  */
 .contact-us {
   position: relative;
@@ -1102,7 +1122,7 @@ footer .btn-top:hover {
  ********************************
  *
  *  header CSS
- *  
+ *
  */
 .blog-header .heading h1 {
   text-transform: capitalize;
@@ -1115,7 +1135,7 @@ footer .btn-top:hover {
  ********************************
  *
  *  Blog Body CSS
- *  
+ *
  */
 /*     blog-post CSS     */
 .blog-body {
@@ -1232,7 +1252,7 @@ aside .cate-all {
 ******************************************
 *
 *   OWL CAROUSEL CUSTOM CSS
-*    
+*
 */
 .owl-carousel {
   display: block !important;
@@ -1264,7 +1284,7 @@ aside .cate-all {
 ******************************************
 *
 *   FLEX SLIDER CSS
-*    
+*
 */
 a.next,
 a.prev {

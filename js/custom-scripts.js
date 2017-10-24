@@ -27,10 +27,12 @@
             $(".background-left").css('min-height', leftHeight);
             $(".background-right").css('min-height', leftHeight);
             $(".background-right-overlay-color").css('min-height', leftHeight);
+            $(".background-left-overlay-color").css('min-height', leftHeight);
         }else{
             $(".background-left").css('min-height', rightHeight);
             $(".background-right").css('min-height', rightHeight);
             $(".background-right-overlay-color").css('min-height', rightHeight);
+            $(".background-left-overlay-color").css('min-height', rightHeigh);
         }
     }
 
@@ -57,7 +59,7 @@
 
 
     /*********************************************************/
-    /*   SCEDULE SECTION MOBILE VIEW                         */             
+    /*   SCEDULE SECTION MOBILE VIEW                         */
     /*********************************************************/
     var btnSceduleCss = function(){
         if($(document).width() <= 991){
@@ -84,7 +86,7 @@
 
 
 
-    
+
     $(window).resize(function(){
 
         /*********************************************************/
@@ -103,11 +105,11 @@
         /*********************************************************/
         /* COLLAPSE LEFT HEIGHT                                  */
         /*********************************************************/
-        collapseLeft(); 
-        
+        collapseLeft();
+
 
         /*********************************************************/
-        /*   SCEDULE SECTION MOBILE VIEW                         */             
+        /*   SCEDULE SECTION MOBILE VIEW                         */
         /*********************************************************/
         btnSceduleCss();
     });
@@ -130,7 +132,7 @@
 
         /**********************************************************/
         /* CAROUSEL SLIDER                                        */
-        /**********************************************************/ 
+        /**********************************************************/
         var owl = $("#slider");
 
         /* TESTIMONIAL SYNC WITH CLIENTS */
@@ -149,7 +151,7 @@
 
 
         /*********************************************************/
-        /*   SCEDULE SECTION MOBILE VIEW                         */             
+        /*   SCEDULE SECTION MOBILE VIEW                         */
         /*********************************************************/
         btnSceduleCss();
 
@@ -165,7 +167,7 @@
         $('.nav li').click(function(){
             var text = $(this).find('.nav-header').text();
             $(this).closest('.dropdown').find('.label').html(text + '<span class="glyphicon glyphicon-menu-down float-right" aria-hidden="true"></span>');
-        
+
             if($(document).width() <= 991){
                 $($(this).closest('.dropdown').find('.nav-cus')).slideToggle('show');
             }
@@ -227,7 +229,7 @@
         /* PARALLAX                                               */
         /**********************************************************/
         $(window).stellar({
-            horizontalScrolling: false 
+            horizontalScrolling: false
         });
 
 
@@ -252,7 +254,7 @@
 
         /***********************************************************/
         /* COUNT DOWN                                              */
-        /***********************************************************/       
+        /***********************************************************/
         $('.count_down').countdown({
             end_time: "2017/11/15 23:59:59 +0600",
             wrapper: function(unit){
@@ -308,7 +310,7 @@
         });
 
 
-     
+
     });
 
 
@@ -317,7 +319,7 @@
     /**********************************************************/
     function init_map() {
         var myLocation = new google.maps.LatLng(-2.5003354,-44.2899603);
-            
+
             var draggableValue;
             if($(document).width() <= 768){
                 draggableValue = false;   /*This option is used for disabling drag.*/
@@ -335,26 +337,25 @@
             scaleControl: false,   /*This option is used for disable zoom by scale.*/
             scrollwheel: false,   /*This option is used for disable zoom on mouse.*/
             navigationControl: true,   /**/
-            
-            // How you would like to style the map. 
+
+            // How you would like to style the map.
            // This is where you would paste any style found on Snazzy Maps.
            styles: [{"stylers": [{"saturation": -100}]}],
 
             streetViewControl: true   /**/
-          
+
         };
 
         var marker = new google.maps.Marker({
             position: myLocation,
             title:"Peggy Guggenheim Collection"});
-          
+
         var map = new google.maps.Map(document.getElementById("map"),
             mapOptions);
 
-        marker.setMap(map); 
+        marker.setMap(map);
     }
     google.maps.event.addDomListener(window, 'load', init_map);
 
 
 });
-
