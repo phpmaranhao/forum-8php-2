@@ -256,7 +256,7 @@
         /* COUNT DOWN                                              */
         /***********************************************************/
         $('.count_down').countdown({
-            end_time: "2017/11/15 23:59:59 +0600",
+            end_time: "2017/11/17 08:00:00 +0600",
             wrapper: function(unit){
                 var wrpr = $('<div></div>').
                     addClass(unit.toLowerCase()+'_wrapper').
