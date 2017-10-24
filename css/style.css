@@ -519,6 +519,29 @@ h3 {
 .about-our-event-right .buy-tricket .btn-group {
     margin-top: 20px;
 }
+
+.speakers .item{
+  background: none !important;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.speakers .item h3 {
+    margin: 0;
+}
+
+.speakers .item img{
+	max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    .speakers .item {
+        text-align: left;
+    }
+}
 /*
  ********************************
  *
